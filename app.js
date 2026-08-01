@@ -500,7 +500,7 @@
       `;
 
       bind();
-      window.scrollTo(0, 0);
+      if (typeof window.scrollTo === "function") window.scrollTo(0, 0);
     }
 
     function setTocOpen(open) {

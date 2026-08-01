@@ -1,7 +1,20 @@
 {
-  "generated": "2026-08-01T09:31:03Z",
-  "bookCount": 2,
+  "generated": "2026-08-01T09:38:47Z",
+  "bookCount": 3,
   "books": [
+    {
+      "slug": "atomic-habits-james-clear-audiobook",
+      "title": "Atomic Habits by James Clear | Full Audiobook",
+      "date": "2026-08-01",
+      "status": "full",
+      "summary": "Hello and welcome. Tonight or whenever you've chosen to press play, invite you into a journey that may seem quiet at first, even unremarkable. But as the minutes pass and the ideas begin to build, you may come to realize this is no ordinary self-help book.",
+      "video_id": "4r6Vdjx9RqA",
+      "url": "https://www.youtube.com/watch?v=4r6Vdjx9RqA",
+      "type": "book",
+      "chapterCount": 25,
+      "coverAccent": "#3d6b5a",
+      "insightsUrl": "https://dong-xuyong.github.io/wiki-insights/#/v/atomic-habits-james-clear-audiobook"
+    },
     {
       "slug": "master-your-inner-world-first-mindset-audiobook",
       "title": "Master Your Inner World First: Control Yourself, Control Life  | Mindset Audiobook",
