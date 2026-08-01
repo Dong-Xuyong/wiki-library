@@ -1,0 +1,32 @@
+{
+  "generated": "2026-08-01T09:31:03Z",
+  "bookCount": 2,
+  "books": [
+    {
+      "slug": "master-your-inner-world-first-mindset-audiobook",
+      "title": "Master Your Inner World First: Control Yourself, Control Life  | Mindset Audiobook",
+      "date": "2026-08-01",
+      "status": "full",
+      "summary": "Most people don't realize when they lose control of their lives. It doesn't happen all at once. It happens quietly in small moments when you react instead of choose.",
+      "video_id": "IUTQbRwYTSw",
+      "url": "https://www.youtube.com/watch?v=IUTQbRwYTSw",
+      "type": "book",
+      "chapterCount": 9,
+      "coverAccent": "#3d6b5a",
+      "insightsUrl": "https://dong-xuyong.github.io/wiki-insights/#/v/master-your-inner-world-first-mindset-audiobook"
+    },
+    {
+      "slug": "success-begins-the-day-you-take-yourself-seriously-mindset-audiobook",
+      "title": "Success Begins the Day You Take Yourself Seriously | Mindset Audiobook",
+      "date": "2026-08-01",
+      "status": "full",
+      "summary": "One day you realize something uncomfortable. No one is coming to take your life seriously for you. Not your boss, not your friends, not even your family.",
+      "video_id": "Y7rnJNCBuhw",
+      "url": "https://www.youtube.com/watch?v=Y7rnJNCBuhw",
+      "type": "book",
+      "chapterCount": 9,
+      "coverAccent": "#3d6b5a",
+      "insightsUrl": "https://dong-xuyong.github.io/wiki-insights/#/v/success-begins-the-day-you-take-yourself-seriously-mindset-audiobook"
+    }
+  ]
+}
