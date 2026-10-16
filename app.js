@@ -55,7 +55,7 @@
   function renderState(opts) {
     const { title, message, error, retry } = opts;
     root.innerHTML = `
-      <div class="state-panel${error ? " error" : ""}">
+      <div class="state-panel dx-card${error ? " error" : ""}">
         ${title ? `<span class="state-title">${esc(title)}</span>` : ""}
         <div>${esc(message || "")}</div>
         ${retry ? `<button type="button" class="retry-btn" data-retry>Retry</button>` : ""}
@@ -73,7 +73,7 @@
     const summary = snippet(book.summary || "");
     const isNew = percent <= 0;
     return `
-      <button type="button" class="book-card" data-slug="${esc(book.slug)}" aria-label="Open ${esc(book.title)}">
+      <button type="button" class="book-card dx-card" data-slug="${esc(book.slug)}" aria-label="Open ${esc(book.title)}">
         <div class="book-cover" style="--cover-accent: ${esc(accent)}">
           <span class="book-cover-title">${esc(book.title)}</span>
         </div>
@@ -110,7 +110,7 @@
 
     const cards = books.map((b) => bookCardHtml(b, progressPercent(b.slug))).join("");
     root.innerHTML = `
-      <div class="shelf-header">
+      <div class="shelf-header dx-on-bg">
         <h2>Your shelf</h2>
         <span class="shelf-count">${books.length} title${books.length === 1 ? "" : "s"}</span>
       </div>
@@ -146,7 +146,7 @@
     setHeaderMeta("");
     root.innerHTML = `
       <button type="button" class="reader-back" data-back>← Shelf</button>
-      <div class="reader-stub">
+      <div class="reader-stub dx-card">
         <div class="stub-title">Opening…</div>
         <div>Loading ${esc(slug)}</div>
       </div>
@@ -197,7 +197,7 @@
     const title = bookData?.meta?.title || bookData?.title || slug;
     root.innerHTML = `
       <button type="button" class="reader-back" data-back>← Shelf</button>
-      <div class="reader-stub">
+      <div class="reader-stub dx-card">
         <div class="stub-title">${esc(title)}</div>
         <div>Reader unavailable.</div>
       </div>
@@ -417,7 +417,7 @@
 
       if (!chapters.length) {
         root.innerHTML = `
-          <div class="reader-shell" data-font="${esc(font)}">
+          <div class="reader-shell dx-card" data-font="${esc(font)}">
             <div class="reader-toolbar">
               <button type="button" class="reader-back" data-action="shelf">← Shelf</button>
             </div>
@@ -456,7 +456,7 @@
       ).join("");
 
       root.innerHTML = `
-        <div class="reader-shell" data-font="${esc(font)}">
+        <div class="reader-shell dx-card" data-font="${esc(font)}">
           <div class="progress-bar" aria-hidden="true">
             <div class="progress-bar__fill" data-progress-fill style="width:${pct}%"></div>
           </div>
@@ -474,7 +474,7 @@
           </div>
 
           <div class="toc-backdrop hidden" data-action="toc-close" hidden></div>
-          <aside id="toc-drawer" class="toc-drawer" aria-label="Table of contents" data-open="false">
+          <aside id="toc-drawer" class="toc-drawer dx-card" aria-label="Table of contents" data-open="false">
             <div class="toc-drawer__head">
               <strong>Chapters</strong>
               <button type="button" class="toc-close" data-action="toc-close" aria-label="Close contents">✕</button>
